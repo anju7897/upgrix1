@@ -1,0 +1,207 @@
+/* Section */
+.cs4-section {
+    background: #141416;
+    padding: 0px 20px;
+    padding-top: 0px !important;
+}
+
+.cs4-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Heading */
+.cs4-heading {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.cs4-heading h2 {
+    font-size: 35px;
+    color: #fff;
+}
+
+.cs4-heading span {
+    background: linear-gradient(135deg,
+            var(--theme-primary-color),
+            var(--theme-secondary-color));
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* Optional (better support ke liye) */
+    background-clip: text;
+    color: transparent;
+}
+
+.cs4-heading p {
+    color: #888;
+}
+
+/* Row */
+.cs4-row {
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .cs4-row {
+        flex-direction: column;
+    }
+}
+
+/* Column */
+.cs4-col {
+    flex: 1;
+}
+
+/* Card */
+.cs4-card {
+    display: flex;
+    background: #111;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgb(121, 88, 4);
+}
+
+@media (max-width: 768px) {
+    .cs4-card {
+        flex-direction: column;
+    }
+}
+
+/* LEFT IMAGE */
+.cs4-img {
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+    .cs4-img {
+        width: 100%;
+    }
+}
+
+/* Image wrapper */
+.cs4-img-wrapper {
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+}
+
+.cs4-img-wrapper img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+/* Auto scroll */
+.auto-scroll img {
+    animation: scrollImg 12s linear infinite alternate;
+}
+
+/* Hover scroll */
+.cs4-img-wrapper:hover img {
+    transform: translateY(-70%);
+    transition: 8s linear;
+}
+
+/* Animation */
+@keyframes scrollImg {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-70%);
+    }
+}
+
+/* RIGHT CONTENT */
+.cs4-content {
+    width: 50%;
+    padding: 20px;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .cs4-content {
+        width: 100%;
+    }
+}
+
+.cs4-content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.cs4-content p {
+    color: #bbb;
+    margin-bottom: 15px;
+}
+
+.cs4-content ul {
+    margin-bottom: 15px;
+}
+
+.cs4-content li {
+    margin-bottom: 5px;
+    color: #ccc;
+}
+
+
+/* Swiper arrows */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #fff;
+}
+
+/* Pagination */
+.swiper-pagination-bullet {
+    background: #777;
+}
+
+.swiper-pagination-bullet-active {
+    background: #ff0080;
+}
+
+.cs4-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* List Item */
+.cs4-list li {
+    list-style: none;
+    position: relative;
+    padding: 8px 14px 8px 35px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    color: #fff;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+/* Icon (✔ replaced with design icon) */
+.cs4-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: #fff;
+    width: 18px;
+    height: 18px;
+    background: linear-gradient(135deg, var(--theme-primary-color), var(--theme-secondary-color));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hover effect */
+.cs4-list li:hover {
+    background: linear-gradient(135deg, rgba(225, 174, 5, 0.2), rgba(243, 167, 54, 0.2));
+    transform: translateY(-2px);
+}

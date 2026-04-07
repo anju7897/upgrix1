@@ -1,0 +1,96 @@
+.tm-section {
+    padding-top: 50px !important;
+    padding: 70px 0;
+    background: #141416;
+    color: #fff;
+}
+
+.tm-heading {
+    padding-bottom: 25px !important;
+}
+
+
+.tm-heading h2 span {
+    color: #eebd43;
+}
+
+/* Equal height fix */
+.tm-section .swiper-slide {
+    display: flex;
+    height: auto;
+}
+
+/* Card */
+.tm-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(238, 189, 67, 0.2);
+    border-radius: 15px;
+    padding: 25px;
+    transition: 0.4s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.tm-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(238, 189, 67, 0.2);
+}
+
+/* Stars */
+.tm-stars {
+    margin-bottom: 10px;
+}
+
+.tm-stars span {
+    color: #444;
+    font-size: 20px;
+}
+
+.tm-stars span.active {
+    color: #eebd43;
+}
+
+/* Text */
+.tm-text {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 15px 0;
+    flex-grow: 1;
+}
+
+/* User */
+.tm-user {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: auto;
+}
+
+.tm-user img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 2px solid #eebd43;
+}
+
+.tm-user h4 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.tm-user span {
+    font-size: 13px;
+    color: #eebd43;
+}
+
+/* Pagination */
+.tm-section .swiper-pagination-bullet {
+    background: #555;
+    opacity: 1;
+}
+
+.tm-section .swiper-pagination-bullet-active {
+    background: #eebd43;
+}

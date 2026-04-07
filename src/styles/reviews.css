@@ -1,0 +1,73 @@
+.cr-section {
+    padding: 70px 0;
+    background: #141416;
+    color: #fff;
+}
+
+.cr-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.cr-heading h2 span {
+    color: #eebd43;
+}
+
+/* Card */
+.cr-card {
+    border-radius: 12px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(238, 189, 67, 0.2);
+}
+
+/* Video box */
+.cr-video-box {
+    position: relative;
+    cursor: pointer;
+}
+
+/* Video */
+.cr-video {
+    width: 100%;
+    height: 250px;
+    border: none;
+}
+
+/* Overlay */
+.cr-overlay {
+    position: relative;
+}
+
+.cr-overlay img {
+    width: 100%;
+
+    object-fit: cover;
+}
+
+/* Play button */
+.cr-play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #eebd43;
+    color: #000;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+/* Pagination */
+.cr-section .swiper-pagination-bullet {
+    background: #555;
+}
+
+.cr-section .swiper-pagination-bullet-active {
+    background: #eebd43;
+}
