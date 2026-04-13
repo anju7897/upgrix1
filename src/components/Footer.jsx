@@ -61,19 +61,19 @@ export default function Footer(){
           <h5 className="mb-4 footer-title-style">Digital Marketing Services</h5>
           <ul className="list-unstyled mb-0 footer-menu">
             <li className="mb-3">
-              <a href="#"><i class="la la-angle-right footer-list me-2"></i>SEO (Search Engine Optimization)</a>
+              <a href="/seo"><i class="la la-angle-right footer-list me-2"></i>SEO (Search Engine Optimization)</a>
             </li>
             <li className="mb-3">
-              <a href="#"><i class="la la-angle-right me-2"></i>SMO (Social Media Optimization)</a>
+              <a href="/smo-services"><i class="la la-angle-right me-2"></i>SMO (Social Media Optimization)</a>
             </li>
             <li className="mb-3">
-              <a href="#"><i class="la la-angle-right me-2"></i>SMM (Social Media Marketing)</a>
+              <a href="/smm-services"><i class="la la-angle-right me-2"></i>SMM (Social Media Marketing)</a>
             </li>
             <li className="mb-3">
-              <a href="#"><i class="la la-angle-right me-2"></i>Website Design Services</a>
+              <a href="/website-design-services"><i class="la la-angle-right me-2"></i>Website Design Services</a>
             </li>
             <li className="mb-3">
-              <a href="#"><i class="la la-angle-right me-2"></i>UI & UX Design Services</a>
+              <a href="/ui-ux-design-services"><i class="la la-angle-right me-2"></i>UI & UX Design Services</a>
             </li>
             
           </ul>
@@ -82,19 +82,19 @@ export default function Footer(){
           <h5 className="mb-4 footer-title-style">Quick Links</h5>
           <ul className="list-unstyled mb-0 footer-menu">
             <li className="mb-3">
-              <a href="#"><i class="la la-angle-right me-2"></i>About Us</a>
+              <a href="/about-us"><i class="la la-angle-right me-2"></i>About Us</a>
             </li>
             <li className="mb-3">
-              <a href="#"><i class="la la-angle-right me-2"></i>Contact Us</a>
+              <a href="/contact-us"><i class="la la-angle-right me-2"></i>Contact Us</a>
             </li>
             <li className="mb-3">
-              <a href="#"><i class="la la-angle-right me-2"></i>Blog</a>
+              <a href="/blog"><i class="la la-angle-right me-2"></i>Blog</a>
             </li>
             <li className="mb-3">
-              <a href="#"><i class="la la-angle-right me-2"></i>Testimonial</a>
+              <a href="/testimonial"><i class="la la-angle-right me-2"></i>Testimonial</a>
             </li>
             <li>
-              <a href="#"><i class="la la-angle-right me-2"></i>Portfolio</a>
+              <a href="/portfolio"><i class="la la-angle-right me-2"></i>Portfolio</a>
             </li>
           </ul>
         </div>
