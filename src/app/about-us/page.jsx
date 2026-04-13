@@ -28,7 +28,7 @@ export default function AboutPage(){
       <div className="col-12 col-lg-6 position-relative">
         <div className="theme-title ">
           <h6>About Us</h6>
-          <h2>Empowering Businesses 9896895
+          <h2>Empowering Businesses
 Elevating Visibility Driving Growth</h2>
           <p>As the best digital marketing agency in Delhi, we transform your online presence. Founded in 2011 by Punit Sharma, a visionary software engineer, Innovative Digital Marketing leverages the power of SEO services in Delhi, Social media optimization, and Web Development to deliver measurable results.
 <br />
