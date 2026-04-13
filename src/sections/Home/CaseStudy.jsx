@@ -11,34 +11,31 @@ import "swiper/css/navigation";
 import "@/styles/case-study.css";
 
 const caseStudies = [
+ {
+  title: "Dr. Ashish Vashistha",
+  img: "/assets/img/dr-ashish-vashishtha.jpg",
+  services: ["SEO Optimization", "Google Ads Campaigns", "Website Design & Management"],
+  auto: true,
+},
   {
-    title: "Healthcare Website",
-    img: "/assets/img/dr-ashish-vashishtha.jpg",
-    desc: "SEO, Ads & Website Optimization for healthcare growth.",
-    services: ["SEO Optimization", "Google Ads", "Website Design"],
-    auto: true,
-  },
+  title: "Dr. Archit Pandit",
+  img: "/assets/img/dr-archit-pandit-upgrix.jpg",
+  services: ["SEO Optimization", "Website Design & Management", "Facebook Ads", "Social Media Management", "YouTube Marketing"],
+  auto: true,
+},
   {
-    title: "E-commerce Store",
-    img: "/assets/img/dr-archit-pandit-upgrix.jpg",
-    desc: "Boosted sales with performance marketing.",
-    services: ["Facebook Ads", "Conversion Optimization"],
-    auto: true,
-  },
-  {
-    title: "Dental Website",
+    title: "Harmony Dental Clinic",
     img: "/assets/img/dental-harmony-upgrix.jpg",
-    desc: "Improved local SEO & Google Ads.",
-    services: ["Local SEO", "Google Ads", "Landing Page"],
+    services: ["Website Design", "SEO Optimization"],
     auto: true,
   },
   {
-    title: "Clinic Branding",
-    img: "/assets/img/dr-ashish-vashishtha.jpg",
-    desc: "Complete digital branding & lead generation.",
-    services: ["Branding", "SEO", "Ads"],
+    title: "Gastro Clinic",
+    img: "/assets/img/delhi-gastro.png",   
+    services: ["SEO Optimization", "Website Design", "Social Media Optimization"],
     auto: true,
   },
+  
 ];
 
 // 🔥 Dynamic grouping function

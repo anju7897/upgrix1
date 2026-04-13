@@ -19,12 +19,36 @@ const reviews = [
     poster: "/assets/img/dr-raman-kant-upgrix.png",
   },
   {
-    video: "https://www.youtube.com/embed/RrTFmIIc-h4",
-    poster: "/assets/img/dr-raman-kant-upgrix.png",
+    video: "https://www.youtube.com/embed/Q2iNWsH0osM",
+    poster: "/assets/img/dr-aparna-dhar-upgrix.png",
   },
   {
+    video: "https://www.youtube.com/embed/vq-OmhG5MO4",
+    poster: "/assets/img/dr-geeta-uogrix.png",
+  },
+  {
+    video: "https://www.youtube.com/embed/mbzcpNjGUVo",
+    poster: "/assets/img/dr-jyoti-arora-upgrix.png",
+  },
+  {
+    video: "https://www.youtube.com/embed/2Mp0kl9KZr0",
+    poster: "/assets/img/dr-aswat-upgrix.png",
+  },
+  {
+    video: "https://www.youtube.com/embed/bC0JzLfR11U",
+    poster: "/assets/img/dr-sonal-gupta-upgrix.png",
+  },
+  {
+    video: "https://www.youtube.com/embed/mllRHa4SqDc",
+    poster: "/assets/img/dr-deepika-gupta-upgrix.png",
+  },
+  {
+    video: "https://www.youtube.com/embed/3I3WK_eRETs",
+    poster: "/assets/img/dr-rajender-upgrix.png",
+  },
+   {
     video: "https://www.youtube.com/embed/RrTFmIIc-h4",
-    poster: "/assets/img/dr-raman-kant-upgrix.png",
+    poster: "/assets/img/dr-sudipto-de.png",
   },
 ];
 
@@ -38,7 +62,7 @@ export default function ClientReviews() {
         {/* Heading */}
         <div className="cr-heading text-center">
           <h2>
-            Client Video <span>Reviews</span>
+            Voices of Our <span>Clients </span>
           </h2>
           <p>Real feedback from our happy clients</p>
         </div>
@@ -65,18 +89,18 @@ export default function ClientReviews() {
                   onClick={() => setActiveIndex(index)}
                 >
                   {activeIndex === index ? (
-                    <iframe
-                      className="cr-video"
-                      src={item.video}
-                      allow="encrypted-media"
-                      allowFullScreen
-                    ></iframe>
-                  ) : (
-                    <div className="cr-overlay">
-                      <img src={item.poster} alt="thumbnail" />
-                      <div className="cr-play-btn">▶</div>
-                    </div>
-                  )}
+  <iframe
+    className="cr-video"
+    src={`${item.video}?autoplay=1`}
+    allow="autoplay; encrypted-media"
+    allowFullScreen
+  ></iframe>
+) : (
+  <div className="cr-overlay">
+    <img src={item.poster} alt="thumbnail" />
+    <div className="cr-play-btn">▶</div>
+  </div>
+)}
                 </div>
 
               </div>

@@ -1,0 +1,320 @@
+.custom-breadcrumb-bg {
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: scroll !important;
+}
+
+.seo-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #0c0c0f, #1a1a1f);
+  color: #fff;
+}
+
+/* Heading */
+.seo-heading h2 {
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.seo-heading h2 span {
+  color: #eebd43;
+}
+
+.seo-heading p {
+  opacity: 0.7;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Grid */
+.seo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-top: 50px;
+}
+
+/* Card */
+.seo-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px 20px;
+  border-radius: 15px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  transition: 0.4s;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Hover */
+.seo-card:hover {
+  transform: translateY(-10px);
+  border-color: #eebd43;
+}
+
+/* Icon */
+.seo-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 15px;
+  background: #eebd43;
+  color: #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+/* Text */
+.seo-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.seo-card p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .seo-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .seo-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .seo-heading h2 {
+    font-size: 26px;
+  }
+}
+
+.seo-about-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #0c0c0f, #1a1a1f);
+  color: #fff;
+}
+
+/* Heading */
+.seo-about-content h2 {
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.seo-about-content h2 span {
+  color: #eebd43;
+}
+
+/* List Wrapper */
+.seo-list {
+  margin-top: 25px;
+}
+
+/* Each Item */
+.seo-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px 20px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+/* Hover */
+.seo-item:hover {
+  transform: translateX(6px);
+  background: rgba(238, 189, 67, 0.1);
+}
+
+/* Icon Box (FIXED PERFECT CIRCLE) */
+.seo-icon-box {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  background: #eebd43;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  font-size: 18px;
+}
+
+/* Text */
+.seo-item span {
+  font-size: 15px;
+}
+
+/* Button */
+.seo-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 28px;
+  background: #eebd43;
+  color: #000;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+.seo-btn:hover {
+  color: black;
+}
+
+/* Image */
+.seo-about-img img {
+  width: 100%;
+  max-width: 420px;
+}
+
+.seo-about-img {
+  position: relative;
+  text-align: center;
+}
+
+/* Video Styling */
+.seo-video {
+  width: 100%;
+  height: 300px;
+  max-width: 450px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transition: 0.4s;
+}
+
+.seo-importance-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #0b0b0d, #17171c);
+  color: #fff;
+}
+
+/* Heading */
+.seo-imp-heading h2 {
+  font-size: 34px;
+  margin-bottom: 40px;
+}
+
+.seo-imp-heading span {
+  color: #eebd43;
+}
+
+/* Card */
+.seo-imp-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  margin-bottom: 25px;
+  transition: 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Hover */
+.seo-imp-card:hover {
+  transform: translateY(-8px);
+  border-color: #eebd43;
+}
+
+/* Icon */
+.seo-imp-icon {
+  font-size: 28px;
+  color: #eebd43;
+  margin-bottom: 15px;
+}
+
+/* Text */
+.seo-imp-card p {
+  font-size: 15px;
+  opacity: 0.85;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .seo-imp-heading h2 {
+    font-size: 24px;
+  }
+}
+
+.seo-card ul {
+  padding-left: 18px;
+  margin-top: 10px;
+}
+
+.seo-card ul li {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.geo-section {
+  padding: 20px 0;
+  background: #18181d;
+  color: #fff;
+}
+
+.geo-heading h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.geo-heading span {
+  color: #eebd43;
+}
+
+.geo-heading p {
+  color: #f6eeee;
+  margin-top: 10px;
+}
+
+/* Grid */
+.geo-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 50px;
+}
+
+/* Card */
+.geo-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  padding: 30px;
+  border-radius: 16px;
+  transition: 0.4s;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.geo-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  border-color: #eebd43;
+}
+
+/* Step Number */
+.step-number {
+  font-size: 50px;
+  font-weight: bold;
+  color: #5e5c56;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+/* Text */
+.geo-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.geo-card p {
+  color: #fff;
+  font-size: 14px;
+}

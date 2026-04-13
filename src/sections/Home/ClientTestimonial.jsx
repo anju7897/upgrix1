@@ -12,24 +12,38 @@ import "@/styles/client-testimonial.css";
 
 const testimonials = [
   {
-    name: "Rohit Sharma",
-    role: "Business Owner",
-    text: "Amazing service! My website traffic increased within weeks. Highly recommended.",
-    img: "/assets/img/upgrix-img.png",
+    name: "Raman Kant Aggarwal",
+    role: "Doctor",
+    text: "Dedicated, focused, genuine trustworthy and enterprising Real good value for Customers",
+    img: "/assets/client/dr-raman-kant-upgrix.jpg",
     rating: 5,
   },
   {
-    name: "Anjali Verma",
-    role: "Startup Founder",
-    text: "Professional team with great results. Loved their digital marketing strategies.",
-    img: "/assets/img/upgrix-img.png",
+    name: "Geeta Kadayaprath",
+    role: "The Breast Cancer Clinic",
+    text: "Prompt services with a great team which is able to create excellent content and post it at appropriate times. Response to queries and resolution of problems is also very quick. Thank you!",
+    img: "/assets/client/dr-geeta-upgrix.jpg",
     rating: 4,
   },
   {
-    name: "Amit Singh",
-    role: "Entrepreneur",
-    text: "They helped my business grow online. Best decision ever!",
-    img: "/assets/img/upgrix-img.png",
+    name: "Sawan Bopanna",
+    role: "Doctor",
+    text: "Mr Punit and innovative digital marketing have been very professional in their digital services Definitely recommend",
+    img: "/assets/client/dr-sawan-bhopana-upgrix.jpg",
+    rating: 5,
+  },
+   {
+    name: "Dr Neha Khandelwal",
+    role: "Doctor",
+    text: "Excellent work by Mr Puneet and his team .A very dedicated team and has lot of creativity !",
+    img: "/assets/client/dr-neha-khandewal-upgrix.png",
+    rating: 5,
+  },
+   {
+    name: "Ajeet Tiwari",
+    role: "Doctor",
+    text: "Marketing is not about providing false details or boasting about urself but letting people know what you want them to know about yourself rather than they learning unpredictable things about you by someone else. And thats exactly what Innovative Digital Marketing has done for me. Many thanks to the entire team that keeps helping me all the time with the smallest of details. Kudos 5 star...!!!!",
+    img: "/assets/client/dr-ajeet-ttiwari-upgrix.jpg",
     rating: 5,
   },
 ];
@@ -38,13 +52,6 @@ export default function Testimonial() {
   return (
     <section className="tm-section">
       <div className="container">
-
-        <div className="tm-heading text-center">
-          <h2>
-            Client <span>Testimonials</span>
-          </h2>
-          <p>What our clients say about us</p>
-        </div>
 
         <Swiper
           modules={[Autoplay, Pagination]}

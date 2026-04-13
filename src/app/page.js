@@ -14,10 +14,11 @@ export default function Home() {
       <About />
       <Services />
       <Testimonials />
+      <ClientTestimoni />
       <WhyChoose />
       <CaseStudy />
       <AiSeo />
-      <ClientTestimoni />
+      
       
     
     </>

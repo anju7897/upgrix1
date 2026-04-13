@@ -1,3 +1,5 @@
+import "@/styles/footer.css";
+
 import Link from "next/link";
 export default function Footer(){
     return (
@@ -56,50 +58,43 @@ export default function Footer(){
           </div>
         </div>
         <div className="col-lg-4 col-md-6">
-          <h5 className="mb-4">Digital Marketing Services</h5>
+          <h5 className="mb-4 footer-title-style">Digital Marketing Services</h5>
           <ul className="list-unstyled mb-0 footer-menu">
             <li className="mb-3">
-              <a href="ui-ux-experience.html">SEO (Search Engine Optimization)</a>
+              <a href="ui-ux-experience.html"><i class="la la-angle-right footer-list me-2"></i>SEO (Search Engine Optimization)</a>
             </li>
             <li className="mb-3">
-              <a href="digital-marketing.html">SMO (Social Media Optimization)</a>
+              <a href="digital-marketing.html"><i class="la la-angle-right me-2"></i>SMO (Social Media Optimization)</a>
             </li>
             <li className="mb-3">
-              <a href="mobile-development.html">SMM (Social Media Marketing)</a>
+              <a href="mobile-development.html"><i class="la la-angle-right me-2"></i>SMM (Social Media Marketing)</a>
             </li>
             <li className="mb-3">
-              <a href="social-media-marketing.html">Website Design Services</a>
+              <a href="social-media-marketing.html"><i class="la la-angle-right me-2"></i>Website Design Services</a>
             </li>
             <li className="mb-3">
-              <a href="website-development.html">UI & UX Design Services</a>
+              <a href="website-development.html"><i class="la la-angle-right me-2"></i>UI & UX Design Services</a>
             </li>
-            <li className="mb-3">
-              <Link href="business-strategy.html">Content Marketing Services</Link>
-            </li>
-            <li className="mb-3"><Link href="#">Google Ads Services</Link></li>
-
-            <li className="mb-3"><Link href="#">GMB (Google My Business)</Link></li>
-            <li className="mb-3"><Link href="#">ECommerce Web Designing</Link></li>
-
+            
           </ul>
         </div>
         <div className="col-lg-4 col-md-6 mt-5 mt-md-0">
-          <h5 className="mb-4">Quick Links</h5>
+          <h5 className="mb-4 footer-title-style">Quick Links</h5>
           <ul className="list-unstyled mb-0 footer-menu">
             <li className="mb-3">
-              <a href="about-us.html">About Us</a>
+              <a href="about-us.html"><i class="la la-angle-right me-2"></i>About Us</a>
             </li>
             <li className="mb-3">
-              <a href="contact.html">Contact Us</a>
+              <a href="contact.html"><i class="la la-angle-right me-2"></i>Contact Us</a>
             </li>
             <li className="mb-3">
-              <a href="price-table.html">Blog</a>
+              <a href="price-table.html"><i class="la la-angle-right me-2"></i>Blog</a>
             </li>
             <li className="mb-3">
-              <a href="blog-grid-3.html">Testimonial</a>
+              <a href="blog-grid-3.html"><i class="la la-angle-right me-2"></i>Testimonial</a>
             </li>
             <li>
-              <a href="contact-us.html">Portfolio</a>
+              <a href="contact-us.html"><i class="la la-angle-right me-2"></i>Portfolio</a>
             </li>
           </ul>
         </div>

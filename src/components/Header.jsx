@@ -1,11 +1,16 @@
 "use client";
-import Link from "next/link";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
 
+import Link from "next/link";
+import { useEffect } from "react";
+import { usePathname } from "next/navigation"; // ✅ ONLY ONE TIME
+import { Swiper, SwiperSlide } from "swiper/react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
+
 export default function Header(){
+  
     const logos = [
     "assets/img/upgrix-client-1.png",
     "assets/img/upgrix-client-2.png",
@@ -15,10 +20,12 @@ export default function Header(){
     "assets/img/upgrix-client-6.png",
     "assets/img/upgrix-client-4.png",
     "assets/img/upgrix-client-5.png",
+     "assets/img/upgrix-client-6.png",
+    "assets/img/upgrix-client-4.png",
+    "assets/img/upgrix-client-5.png",
  
   ];
-    return(
-        
+    return(      
   
        
 <>
@@ -29,14 +36,14 @@ export default function Header(){
         <Swiper
           modules={[Autoplay]}
           slidesPerView="auto"
-          spaceBetween={40}
+          spaceBetween={10}
           loop={true}
-          speed={4000}                // 🔥 smooth movement
+          speed={4000}                
           autoplay={{
-            delay: 0,                // ❌ no pause
+            delay: 0,                
             disableOnInteraction: false,
           }}
-          freeMode={true}            // 🔥 continuous flow
+          freeMode={true}            
         >
           {logos.map((logo, index) => (
             <SwiperSlide key={index} style={{ width: "150px" }}>
@@ -45,7 +52,7 @@ export default function Header(){
                   src={logo}
                   alt="client"
                   className="object-contain opacity-70 hover:opacity-100 transition"
-                  style={{borderRadius: "2px", width: "177px"}}
+                  style={{borderRadius: "2px", width: "auto", height: "40px"}}
                 />
               </div>
             </SwiperSlide>
@@ -77,41 +84,47 @@ export default function Header(){
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav mx-auto">
                 <li className="nav-item dropdown">
-                  <a className="nav-link active" href="#" data-bs-toggle="dropdown">Home</a>
+                  <Link className="nav-link active" href="/">Home</Link>
                   
                 </li>
                 <li className="nav-item dropdown">
                   <a className="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
                   <ul className="dropdown-menu">
                     <li>
-                      <a className="dropdown-item" href="#">SEO (Search Engine Optimization)</a>
+                      <a className="dropdown-item" href="/aeo-services">AEO (Answer Engine Optimization) </a>
+                      </li>
+                      <li>
+                        <a href="/geo-services" className="dropdown-item" >GEO (Generative Engine Optimization)</a>
+                      </li>
+                    <li>
+                   <a href="/seo" className="dropdown-item" >SEO</a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="#">SMO (Social Media Optimization)</a>
+                      <a className="dropdown-item" href="/smo-services">SMO (Social Media Optimization)</a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="team-single.html">SMM (Social Media Marketing)</a>
+                      <a className="dropdown-item" href="/smm-services">SMM (Social Media Marketing)</a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="pricing.html">Website Design Services</a>
+                      <a className="dropdown-item" href="/website-design-services">Website Design Services</a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="faq.html">UI & UX Design Services</a>
+                      <a className="dropdown-item" href="ui-ux-design-services">UI & UX Design Services</a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="coming-soon.html">Content Marketing Services</a>
+                      <a className="dropdown-item" href="/content-marketing-services">Content Marketing Services</a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="error-404.html">Google Ads Services</a>
+                      <a className="dropdown-item" href="/google-ads-services">Google Ads Services</a>
                     </li>
                     <li>
-                      <Link className="dropdown-item" href="#">GMB (Google My Business)</Link>
+                      <a className="dropdown-item" href="/gmb-services">GMB (Google My Business)</a>
                     </li>
                     <li>
-                      <Link className="dropdown-item" href="#">ECommerce Web Designing</Link>
+                      <a className="dropdown-item" href="/e-commerce-web-designing-services">ECommerce Web Designing</a>
                     </li>
                     <li>
-                      <Link className="dropdown-item" href="#">App Development</Link>
+                      <a className="dropdown-item" href="/app-development">App Development</a>
                     </li>
                   </ul>
                 </li>
@@ -119,24 +132,36 @@ export default function Header(){
                   <a className="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Packages</a>
                   <ul className="dropdown-menu">
                     <li>
-                      <a className="dropdown-item" href="#">SEO (Search Engine Optimization)</a>
+                      <a className="dropdown-item" href="/seo-package">SEO (Search Engine Optimization)</a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="#">SMO (Social Media Optimization)</a>
+                      <a className="dropdown-item" href="/smo-package">SMO (Social Media Optimization)</a>
                     </li>
 
                   </ul>
                 </li>
-                <li className="nav-item dropdown">
-                  <a className="nav-link" href="#">Portfolio</a>
-                  
+                 <li className="nav-item dropdown">
+                  <a className="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">About Us</a>
+                  <ul className="dropdown-menu">
+                     <li>
+                      <a className="dropdown-item" href="/about-us">Our Company</a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="/our-team">Our Team</a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="/our-portfolio">Our Portfolio</a>
+                    </li>
+
+                  </ul>
                 </li>
+                
                 <li className="nav-item dropdown">
-                  <a className="nav-link" href="#">Blogs</a>
+                  <Link className="nav-link" href="/blog">Blogs</Link>
 
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="contact.html">Contact Us</a>
+                  <Link className="nav-link" href="/contact-us">Contact Us</Link>
                 </li>
               </ul>
             </div>
@@ -148,7 +173,7 @@ export default function Header(){
                   <a href="tel:+91 9212223317">+91 9212223317</a>
                 </div>
               </div>
-              <a className="primary-btn" href="#">Get It Now </a>
+              {/* <a className="primary-btn" href="#">Get It Now </a> */}
             </div>
           </nav>
         </div>

@@ -1,0 +1,31 @@
+.footer-title-style {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 12px;
+}
+
+/* full bottom line */
+.footer-title-style::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-left: 30px;
+    width: 120px;
+    /* fixed width like image */
+    height: 2px;
+    background: #fff;
+    /* dark teal */
+}
+
+/* top small line */
+.footer-title-style::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 6px;
+    width: 100px;
+    height: 2px;
+    background: #d9ab3e;
+    /* light teal */
+}

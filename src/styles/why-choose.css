@@ -1,129 +1,105 @@
-.wc-section {
-    padding: 50px 0;
-    background: #141416;
+.wc-new {
+    padding: 70px 0;
+    background: linear-gradient(135deg, #0f0f11, #1b1b1f);
     color: #fff;
 }
 
-.wc-heading h2 span {
+/* Heading */
+.wc-head h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.wc-head h2 span {
     color: #eebd43;
 }
 
-/* Wrapper */
-.wc-wrapper {
-    position: relative;
+.wc-head p {
+    opacity: 0.7;
+}
+
+/* Grid */
+.wc-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
     margin-top: 50px;
-    padding-left: 30px;
 }
 
-/* Vertical line */
-.wc-line {
-    position: absolute;
-    left: 15px;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background: #eebd43;
-}
-
-/* Item */
-.wc-item {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 40px;
+/* Card */
+.wc-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 30px 20px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    transition: 0.4s;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     position: relative;
+    overflow: hidden;
+}
+
+/* Glow effect */
+.wc-card::before {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle, rgba(238, 189, 67, 0.2), transparent);
+    top: -50%;
+    left: -50%;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.wc-card:hover::before {
+    opacity: 1;
+}
+
+/* Hover */
+.wc-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    border-color: #eebd43;
 }
 
 /* Icon */
 .wc-icon {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 15px;
     background: #eebd43;
     color: #000;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 22px;
+}
+
+/* Text */
+.wc-card h3 {
     font-size: 18px;
-    margin-right: 20px;
-    z-index: 1;
-    transition: 0.3s;
+    margin-bottom: 10px;
 }
 
-/* Hover */
-.wc-item:hover .wc-icon {
-    transform: scale(1.2);
-}
-
-/* Content */
-.wc-content h3 {
-    margin: 0;
-    font-size: 20px;
-}
-
-.wc-content p {
-    margin-top: 8px;
+.wc-card p {
     font-size: 14px;
-    opacity: 0.85;
+    opacity: 0.8;
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-    .wc-wrapper {
-        padding-left: 20px;
-    }
-
-    .wc-icon {
-        width: 35px;
-        height: 35px;
-        font-size: 16px;
+@media (max-width: 992px) {
+    .wc-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-/* 📱 Mobile Fix */
-@media (max-width: 768px) {
-
-    .wc-wrapper {
-        padding-left: 0;
+@media (max-width: 576px) {
+    .wc-grid {
+        grid-template-columns: 1fr;
     }
 
-    /* Line center me le aao */
-    .wc-line {
-        left: 20px;
-    }
-
-    .wc-item {
-        flex-direction: row;
-        align-items: flex-start;
-        gap: 12px;
-        margin-bottom: 25px;
-    }
-
-    /* Icon size optimize */
-    .wc-icon {
-        width: 38px;
-        height: 38px;
-        font-size: 16px;
-        flex-shrink: 0;
-    }
-
-    /* Content spacing fix */
-    .wc-content h3 {
-        font-size: 16px;
-        line-height: 1.3;
-    }
-
-    .wc-content p {
-        font-size: 13px;
-        line-height: 1.5;
-    }
-
-    /* Heading spacing */
-    .wc-heading h2 {
-        font-size: 22px;
-    }
-
-    .wc-heading p {
-        font-size: 14px;
-        padding: 0 10px;
+    .wc-head h2 {
+        font-size: 24px;
     }
 }

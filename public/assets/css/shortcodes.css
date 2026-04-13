@@ -1810,10 +1810,12 @@ a.white-btn:focus,
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
+  border: 1px solid #6f5005;
 }
 
 .accordion-button:not(.collapsed) {
   color: var(--theme-primary-color);
+  /* border: 1px solid rgb(102, 101, 101) */
 }
 
 .accordion-body {
@@ -1822,4 +1824,5 @@ a.white-btn:focus,
   font-family: var(--theme-typography-body-font-family);
   font-weight: 400;
   font-size: 15px;
+  border: 1px solid #6f5005;
 }

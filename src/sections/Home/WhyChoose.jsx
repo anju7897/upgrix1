@@ -1,5 +1,4 @@
 import "@/styles/why-choose.css";
-
 import {
   FaRocket,
   FaUsers,
@@ -10,85 +9,56 @@ import {
 } from "react-icons/fa";
 
 export default function WhyChoose() {
+  const data = [
+    {
+      icon: <FaRocket />,
+      title: "Result-Oriented Approach",
+      desc: "We focus on measurable results that help your business grow faster.",
+    },
+    {
+      icon: <FaUsers />,
+      title: "Experienced Team",
+      desc: "Our experts bring years of experience in SEO and marketing.",
+    },
+    {
+      icon: <FaChartLine />,
+      title: "Data-Driven Strategies",
+      desc: "We use analytics & AI tools to maximize ROI.",
+    },
+    {
+      icon: <FaLightbulb />,
+      title: "Creative Solutions",
+      desc: "Innovative ideas that make your brand stand out.",
+    },
+    {
+      icon: <FaHeadset />,
+      title: "Dedicated Support",
+      desc: "24/7 support for smooth execution.",
+    },
+    {
+      icon: <FaShieldAlt />,
+      title: "Trusted & Reliable",
+      desc: "We build long-term relationships with trust.",
+    },
+  ];
+
   return (
-    <section className="wc-section">
+    <section className="wc-new">
       <div className="container">
 
-        {/* Heading */}
-        <div className="wc-heading text-center">
-          <h2>
-            Why Choose <span>Upgrix Marketing</span>
-          </h2>
-          <p>
-            We deliver result-driven digital solutions powered by strategy, creativity, and technology.
-          </p>
+        <div className="wc-head text-center">
+          <h2>Why Choose <span>Upgrix Marketing</span></h2>
+          <p>We deliver smart, scalable & result-driven digital solutions.</p>
         </div>
 
-        {/* Timeline */}
-        <div className="wc-wrapper">
-
-          <div className="wc-line"></div>
-
-          <div className="wc-item">
-            <div className="wc-icon"><FaRocket /></div>
-            <div className="wc-content">
-              <h3>Result-Oriented Approach</h3>
-              <p>
-                We focus on measurable results that help your business grow faster and smarter.
-              </p>
+        <div className="wc-grid">
+          {data.map((item, index) => (
+            <div className="wc-card" key={index}>
+              <div className="wc-icon">{item.icon}</div>
+              <h3>{item.title}</h3>
+              <p>{item.desc}</p>
             </div>
-          </div>
-
-          <div className="wc-item">
-            <div className="wc-icon"><FaUsers /></div>
-            <div className="wc-content">
-              <h3>Experienced Team</h3>
-              <p>
-                Our experts bring years of experience in SEO, ads, and digital strategy.
-              </p>
-            </div>
-          </div>
-
-          <div className="wc-item">
-            <div className="wc-icon"><FaChartLine /></div>
-            <div className="wc-content">
-              <h3>Data-Driven Strategies</h3>
-              <p>
-                We use analytics and AI tools to optimize campaigns and maximize ROI.
-              </p>
-            </div>
-          </div>
-
-          <div className="wc-item">
-            <div className="wc-icon"><FaLightbulb /></div>
-            <div className="wc-content">
-              <h3>Creative Solutions</h3>
-              <p>
-                Unique and innovative marketing ideas that make your brand stand out.
-              </p>
-            </div>
-          </div>
-
-          <div className="wc-item">
-            <div className="wc-icon"><FaHeadset /></div>
-            <div className="wc-content">
-              <h3>Dedicated Support</h3>
-              <p>
-                24/7 support to guide you and ensure smooth project execution.
-              </p>
-            </div>
-          </div>
-
-          <div className="wc-item">
-            <div className="wc-icon"><FaShieldAlt /></div>
-            <div className="wc-content">
-              <h3>Trusted & Reliable</h3>
-              <p>
-                We build long-term relationships with transparency and trust.
-              </p>
-            </div>
-          </div>
-
+          ))}
         </div>
 
       </div>
