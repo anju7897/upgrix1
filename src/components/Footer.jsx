@@ -8,7 +8,7 @@ export default function Footer(){
     <div className="container">
       <div className="row">
         <div className="col-lg-4 col-md-6 mt-5 mt-lg-0">
-          <a className="footer-logo d-inline-block logo mb-5" href="index.html">
+          <a className="footer-logo d-inline-block logo mb-5" href="/">
             <img className="img-fluid" src="assets/images/upgrix-logo-removebg-preview.png" alt="Logo Img" />
           </a>
           <div className="footer-cntct">
@@ -61,19 +61,19 @@ export default function Footer(){
           <h5 className="mb-4 footer-title-style">Digital Marketing Services</h5>
           <ul className="list-unstyled mb-0 footer-menu">
             <li className="mb-3">
-              <a href="ui-ux-experience.html"><i class="la la-angle-right footer-list me-2"></i>SEO (Search Engine Optimization)</a>
+              <a href="#"><i class="la la-angle-right footer-list me-2"></i>SEO (Search Engine Optimization)</a>
             </li>
             <li className="mb-3">
-              <a href="digital-marketing.html"><i class="la la-angle-right me-2"></i>SMO (Social Media Optimization)</a>
+              <a href="#"><i class="la la-angle-right me-2"></i>SMO (Social Media Optimization)</a>
             </li>
             <li className="mb-3">
-              <a href="mobile-development.html"><i class="la la-angle-right me-2"></i>SMM (Social Media Marketing)</a>
+              <a href="#"><i class="la la-angle-right me-2"></i>SMM (Social Media Marketing)</a>
             </li>
             <li className="mb-3">
-              <a href="social-media-marketing.html"><i class="la la-angle-right me-2"></i>Website Design Services</a>
+              <a href="#"><i class="la la-angle-right me-2"></i>Website Design Services</a>
             </li>
             <li className="mb-3">
-              <a href="website-development.html"><i class="la la-angle-right me-2"></i>UI & UX Design Services</a>
+              <a href="#"><i class="la la-angle-right me-2"></i>UI & UX Design Services</a>
             </li>
             
           </ul>
@@ -82,19 +82,19 @@ export default function Footer(){
           <h5 className="mb-4 footer-title-style">Quick Links</h5>
           <ul className="list-unstyled mb-0 footer-menu">
             <li className="mb-3">
-              <a href="about-us.html"><i class="la la-angle-right me-2"></i>About Us</a>
+              <a href="#"><i class="la la-angle-right me-2"></i>About Us</a>
             </li>
             <li className="mb-3">
-              <a href="contact.html"><i class="la la-angle-right me-2"></i>Contact Us</a>
+              <a href="#"><i class="la la-angle-right me-2"></i>Contact Us</a>
             </li>
             <li className="mb-3">
-              <a href="price-table.html"><i class="la la-angle-right me-2"></i>Blog</a>
+              <a href="#"><i class="la la-angle-right me-2"></i>Blog</a>
             </li>
             <li className="mb-3">
-              <a href="blog-grid-3.html"><i class="la la-angle-right me-2"></i>Testimonial</a>
+              <a href="#"><i class="la la-angle-right me-2"></i>Testimonial</a>
             </li>
             <li>
-              <a href="contact-us.html"><i class="la la-angle-right me-2"></i>Portfolio</a>
+              <a href="#"><i class="la la-angle-right me-2"></i>Portfolio</a>
             </li>
           </ul>
         </div>
