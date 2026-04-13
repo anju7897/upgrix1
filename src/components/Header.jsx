@@ -71,7 +71,7 @@ export default function Header(){
       
         <div className="col">
           <nav className="navbar navbar-expand-lg">
-            <a className="navbar-brand logo" href="index.html">
+            <a className="navbar-brand logo" href="/">
               <img className="img-fluid" src="assets/images/upgrix-logo-removebg-preview.png" alt="" />
             </a>
             <button className="navbar-toggler ht-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
